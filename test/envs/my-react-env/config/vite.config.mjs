@@ -7,6 +7,8 @@ export default [
       lib: {
         formats: ['umd'],
         name: 'xxx',
+        fileName: 'index.umd',
+        entry: './index.ts',
       }
     },
     rollupOptions: {},
