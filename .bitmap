@@ -12,7 +12,7 @@
     "envs/my-react-env": {
         "name": "envs/my-react-env",
         "scope": "study-demo.test",
-        "version": "0.0.2",
+        "version": "0.0.3",
         "mainFile": "index.ts",
         "rootDir": "test/envs/my-react-env"
     },
@@ -26,9 +26,23 @@
     "ui/button": {
         "name": "ui/button",
         "scope": "study-demo.test",
-        "version": "0.0.1",
+        "version": "0.0.2",
         "mainFile": "index.ts",
         "rootDir": "test/ui/button"
+    },
+    "ui/button-webpack": {
+        "name": "ui/button-webpack",
+        "scope": "",
+        "version": "",
+        "defaultScope": "study-demo.test",
+        "mainFile": "index.ts",
+        "rootDir": "test/ui/button-webpack",
+        "config": {
+            "study-demo.test/envs/webpack-react-env": {},
+            "teambit.envs/envs": {
+                "env": "study-demo.test/envs/webpack-react-env"
+            }
+        }
     },
     "$schema-version": "17.0.0"
 }
