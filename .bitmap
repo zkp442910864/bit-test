@@ -9,6 +9,48 @@
  */
 
 {
+    "build/umd-build-task": {
+        "name": "build/umd-build-task",
+        "scope": "",
+        "version": "",
+        "defaultScope": "study-demo.test",
+        "mainFile": "index.ts",
+        "rootDir": "test/build/umd-build-task",
+        "config": {
+            "bitdev.node/node-env@4.0.15": {},
+            "teambit.envs/envs": {
+                "env": "bitdev.node/node-env"
+            }
+        }
+    },
+    "build/umd-build-task-v2": {
+        "name": "build/umd-build-task-v2",
+        "scope": "",
+        "version": "",
+        "defaultScope": "study-demo.test",
+        "mainFile": "index.ts",
+        "rootDir": "test/build/umd-build-task-v2",
+        "config": {
+            "teambit.envs/envs": {
+                "env": "teambit.harmony/node"
+            },
+            "teambit.harmony/node": {},
+            "teambit.dependencies/dependency-resolver": {},
+            "teambit.harmony/application": {},
+            "teambit.compositions/compositions": {},
+            "teambit.docs/docs": {},
+            "teambit.preview/preview": {},
+            "teambit.component/dev-files": {},
+            "teambit.pipelines/builder": {},
+            "teambit.component/forking": {
+                "forkedFrom": {
+                    "scope": "learnbit.extending-bit",
+                    "name": "build-tasks/component-name",
+                    "version": "0.0.4"
+                }
+            }
+        }
+    },
     "envs/my-react-env": {
         "name": "envs/my-react-env",
         "scope": "study-demo.test",
@@ -19,7 +61,7 @@
     "envs/webpack-react-env": {
         "name": "envs/webpack-react-env",
         "scope": "study-demo.test",
-        "version": "0.0.1",
+        "version": "0.0.3",
         "mainFile": "index.ts",
         "rootDir": "test/envs/webpack-react-env"
     },
@@ -32,17 +74,10 @@
     },
     "ui/button-webpack": {
         "name": "ui/button-webpack",
-        "scope": "",
-        "version": "",
-        "defaultScope": "study-demo.test",
+        "scope": "study-demo.test",
+        "version": "0.0.2",
         "mainFile": "index.ts",
-        "rootDir": "test/ui/button-webpack",
-        "config": {
-            "study-demo.test/envs/webpack-react-env": {},
-            "teambit.envs/envs": {
-                "env": "study-demo.test/envs/webpack-react-env"
-            }
-        }
+        "rootDir": "test/ui/button-webpack"
     },
     "$schema-version": "17.0.0"
 }

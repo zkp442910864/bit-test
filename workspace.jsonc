@@ -55,6 +55,8 @@
       "dependencies": {
         "@bitdev/react.preview.react-docs-template": "^0.0.7",
         "@bitdev/react.react-env": "^4.0.16",
+        "@study-demo/test.envs.my-react-env": "^0.0.3",
+        "@teambit/compilation.babel-compiler": "^1.1.18",
         "@teambit/defender.eslint-linter": "^1.0.55",
         "@teambit/defender.jest-tester": "^2.0.17",
         "@teambit/defender.prettier-formatter": "^1.0.23",
@@ -63,7 +65,9 @@
         "@teambit/react.mounter": "^1.0.45",
         "@teambit/react.react-env": "^1.0.129",
         "@teambit/typescript.typescript-compiler": "^2.0.58",
-        "@vitejs/plugin-react": "^4.3.4"
+        "@vitejs/plugin-react": "^4.3.4",
+        "esbuild": "^0.25.1",
+        "typescript": "^5.8.2"
       },
       "peerDependencies": {}
     },

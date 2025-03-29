@@ -4,5 +4,14 @@
 {
   "extends": "@teambit/react.react-env/config/tsconfig.json",
   "exclude": ["artifacts", "public", "dist", "node_modules", "package.json", "**/*.cjs"],
-  "include": ["**/*", "**/*.json"]
+  "include": ["**/*", "**/*.json"],
+  // "compilerOptions": {
+  //   "target": "ES5",
+  //   "module": "UMD",
+  //   "resolveJsonModule": false,
+  //   // "outFile": "./dist/umd.js"
+  //   // "lib": ["DOM", "ES5"],
+  //   // "outDir": "./dist",
+  //   // ...
+  // }
 }
