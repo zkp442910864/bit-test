@@ -1,0 +1,50 @@
+## Basic usage
+
+```ts
+
+// 进入环境配置文件 *.bit-env.ts
+export class XxxEnv extends ReactEnv {
+  ...
+  build () {
+    return Pipeline.from([
+      ...
+      EsbuildUmd.from({
+        external: ['react', 'react-dom', 'antd', "react/jsx-runtime"],
+        globals: {
+          "react": "React",
+          "react-dom": "ReactDOM",
+          "antd": "antd",
+          "react/jsx-runtime": "reactJsxRuntime",
+        },
+        libraryName: 'lib',
+      }),
+      ...
+    ]);
+  }
+  ...
+}
+
+```
+
+
+### 创建 build task (扩展`*.bit-env.ts` 处理任务)
+
+- [使用命令创建build 管道任务](https://bit.dev/reference/build-pipeline/implement-build-task/#create-a-dev-environment-build-task)
+  - `bit create build-task my-build-task`
+
+- [build options docs](https://bit.dev/reference/cli-reference/build)
+
+```bash
+
+# 执行编译无效的时候,尝试执行该命令(特别是改动多的时候)
+bit clear-cache
+
+# 必须先要编译,才能执行build,不然会出现缓存问题
+bit compile
+
+# 指定调试任务
+bit build [包名] --tasks [任务名]
+
+# 其中调试没有找到方法,都是靠输出console 来确认可用数据
+
+```

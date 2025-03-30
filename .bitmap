@@ -12,7 +12,7 @@
     "build/esbuild-umd": {
         "name": "build/esbuild-umd",
         "scope": "study-demo.test",
-        "version": "0.0.1",
+        "version": "0.0.2",
         "mainFile": "index.ts",
         "rootDir": "test/build/esbuild-umd"
     },
@@ -26,7 +26,7 @@
     "envs/webpack-react-env": {
         "name": "envs/webpack-react-env",
         "scope": "study-demo.test",
-        "version": "0.0.4",
+        "version": "0.0.5",
         "mainFile": "index.ts",
         "rootDir": "test/envs/webpack-react-env"
     },
@@ -40,7 +40,7 @@
     "ui/button-webpack": {
         "name": "ui/button-webpack",
         "scope": "study-demo.test",
-        "version": "0.0.3",
+        "version": "0.0.4",
         "mainFile": "index.ts",
         "rootDir": "test/ui/button-webpack"
     },
