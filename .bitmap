@@ -9,47 +9,12 @@
  */
 
 {
-    "build/umd-build-task": {
-        "name": "build/umd-build-task",
-        "scope": "",
-        "version": "",
-        "defaultScope": "study-demo.test",
+    "build/esbuild-umd": {
+        "name": "build/esbuild-umd",
+        "scope": "study-demo.test",
+        "version": "0.0.1",
         "mainFile": "index.ts",
-        "rootDir": "test/build/umd-build-task",
-        "config": {
-            "bitdev.node/node-env@4.0.15": {},
-            "teambit.envs/envs": {
-                "env": "bitdev.node/node-env"
-            }
-        }
-    },
-    "build/umd-build-task-v2": {
-        "name": "build/umd-build-task-v2",
-        "scope": "",
-        "version": "",
-        "defaultScope": "study-demo.test",
-        "mainFile": "index.ts",
-        "rootDir": "test/build/umd-build-task-v2",
-        "config": {
-            "teambit.envs/envs": {
-                "env": "teambit.harmony/node"
-            },
-            "teambit.harmony/node": {},
-            "teambit.dependencies/dependency-resolver": {},
-            "teambit.harmony/application": {},
-            "teambit.compositions/compositions": {},
-            "teambit.docs/docs": {},
-            "teambit.preview/preview": {},
-            "teambit.component/dev-files": {},
-            "teambit.pipelines/builder": {},
-            "teambit.component/forking": {
-                "forkedFrom": {
-                    "scope": "learnbit.extending-bit",
-                    "name": "build-tasks/component-name",
-                    "version": "0.0.4"
-                }
-            }
-        }
+        "rootDir": "test/build/esbuild-umd"
     },
     "envs/my-react-env": {
         "name": "envs/my-react-env",
