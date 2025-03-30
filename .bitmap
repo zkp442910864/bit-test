@@ -19,28 +19,28 @@
     "envs/my-react-env": {
         "name": "envs/my-react-env",
         "scope": "study-demo.test",
-        "version": "0.0.3",
+        "version": "0.0.4",
         "mainFile": "index.ts",
         "rootDir": "test/envs/my-react-env"
     },
     "envs/webpack-react-env": {
         "name": "envs/webpack-react-env",
         "scope": "study-demo.test",
-        "version": "0.0.3",
+        "version": "0.0.4",
         "mainFile": "index.ts",
         "rootDir": "test/envs/webpack-react-env"
     },
     "ui/button": {
         "name": "ui/button",
         "scope": "study-demo.test",
-        "version": "0.0.2",
+        "version": "0.0.3",
         "mainFile": "index.ts",
         "rootDir": "test/ui/button"
     },
     "ui/button-webpack": {
         "name": "ui/button-webpack",
         "scope": "study-demo.test",
-        "version": "0.0.2",
+        "version": "0.0.3",
         "mainFile": "index.ts",
         "rootDir": "test/ui/button-webpack"
     },

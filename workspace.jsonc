@@ -60,7 +60,6 @@
         "@babel/preset-typescript": "^7.27.0",
         "@bitdev/react.preview.react-docs-template": "^0.0.7",
         "@bitdev/react.react-env": "^4.0.16",
-        "@study-demo/test.envs.my-react-env": "^0.0.3",
         "@teambit/compilation.babel-compiler": "^1.1.18",
         "@teambit/defender.eslint-linter": "^1.0.55",
         "@teambit/defender.jest-tester": "^2.0.17",
